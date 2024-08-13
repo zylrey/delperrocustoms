@@ -3,27 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Del Perro Customs Pricelist</title>
+    <title>Tuning & Maintenance Pricelist</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: url('background.png') no-repeat center center fixed;
-            background-size: cover;
+            background: #0a0a0a;
             color: #f0f0f0;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+        .navbar {
+            background-color: #1c1c1c;
+            overflow: hidden;
+            border-bottom: 2px solid #ff0000;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensure it stays on top */
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        .navbar a:hover {
+            background-color: #ff0000;
+            color: #fff;
         }
 
         .container {
             width: 90%;
             max-width: 1200px;
-            margin: auto;
+            margin: 80px auto 20px; /* Adjust top margin to account for fixed navbar */
             padding: 20px;
             text-align: center;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
         }
 
         h1 {
@@ -120,9 +144,14 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Del Perro Customs</br>Pricelist</h1>
+    <div class="navbar">
+        <a href="#tuning">Tuning</a>
+        <a href="#maintenance">Maintenance</a>
+    </div>
 
+    <div class="container">
+        <h1 id="tuning">Del Perro Customs</br>Tuning Pricelist</h1>
+        
         <div class="section">
             <h2>Engine</h2>
             <ul>
@@ -227,58 +256,58 @@
             </ul>
         </div>
 
+        <h1 id="maintenance">Del Perro Customs</br>Maintenance Pricelist</h1>
+
         <div class="section">
-            <h2>Maintenance</h2>
-            <div class="section">
-                <h2>Service Parts</h2>
-                <ul>
-                    <li>Oil Filter <span>$1,500</span></li>
-                    <li>Air Filter <span>$1,500</span></li>
-                    <li>Fuel Filter <span>$1,500</span></li>
-                    <li>Coolant <span>$1,500</span></li>
-                    <li>Brake Fluid <span>$1,500</span></li>
-                    <li>Power Steering Fluid <span>$1,500</span></li>
-                    <li>Transmission Fluid <span>$1,500</span></li>
-                    <li>Spark Plugs <span>$1,500</span></li>
-                    <li>Drive Belt <span>$1,500</span></li>
-                    <li>Flywheel <span>$1,500</span></li>
-                    <li>Tires <span>$1,500</span></li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Engine Parts</h2>
-                <ul>
-                    <li>Radiator <span>$1,500</span></li>
-                    <li>Fuel Pump <span>$1,500</span></li>
-                    <li>Brakes <span>$1,500</span></li>
-                    <li>Drive Shaft <span>$1,500</span></li>
-                    <li>Alternator <span>$1,500</span></li>
-                    <li>Clutch <span>$1,500</span></li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Body Replacement Parts</h2>
-                <ul>
-                    <li>Door <span>$1,000</span></li>
-                    <li>Hood <span>$2,000</span></li>
-                    <li>Trunk <span>$2,000</span></li>
-                    <li>Window <span>$1,000</span></li>
-                    <li>Wheel <span>$1,000</span></li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Kits</h2>
-                <ul>
-                    <li>Advance Repair Kit <span>$3,000</span></li>
-                </ul>
-            </div>
+            <h2>Service Parts</h2>
+            <ul>
+                <li>Oil Filter <span>$1,500</span></li>
+                <li>Air Filter <span>$1,500</span></li>
+                <li>Fuel Filter <span>$1,500</span></li>
+                <li>Coolant <span>$1,500</span></li>
+                <li>Brake Fluid <span>$1,500</span></li>
+                <li>Power Steering Fluid <span>$1,500</span></li>
+                <li>Transmission Fluid <span>$1,500</span></li>
+                <li>Spark Plugs <span>$1,500</span></li>
+                <li>Drive Belt <span>$1,500</span></li>
+                <li>Flywheel <span>$1,500</span></li>
+                <li>Tires <span>$1,500</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Engine Parts</h2>
+            <ul>
+                <li>Radiator <span>$1,500</span></li>
+                <li>Fuel Pump <span>$1,500</span></li>
+                <li>Brakes <span>$1,500</span></li>
+                <li>Drive Shaft <span>$1,500</span></li>
+                <li>Alternator <span>$1,500</span></li>
+                <li>Clutch <span>$1,500</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Body Replacement Parts</h2>
+            <ul>
+                <li>Door <span>$1,000</span></li>
+                <li>Hood <span>$2,000</span></li>
+                <li>Trunk <span>$2,000</span></li>
+                <li>Window <span>$1,000</span></li>
+                <li>Wheel <span>$1,000</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Kits</h2>
+            <ul>
+                <li>Advance Repair Kit <span>$3,000</span></li>
+            </ul>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Del Perro Customs. All rights reserved.</p>
-        <p>Developed by Zyl Fernandez</p>
+        &copy; 2024 Del Perro Customs. All rights reserved.
     </footer>
 </body>
 </html>
-
